@@ -5,8 +5,8 @@ var HypoTrack = (function(){
 
     const WIDTH = 1000;
     const HEIGHT = 500;
-    const COLORS_ALT = ['#5ebaff','#00faf4','#fff795','#ffd821','#ff8f20','#ff6060','#c464d9','#c0c0c0'];
-    const COLORS = ['#5ebaff','#00faf4','#ffffcc','#ffe775','#ffc140','#ff8f20','#ff6060','#c0c0c0'];
+    const COLORS_ALT = ['#01B3FF','#06FF01','#FFF501','#FFB801','#FF5C01','#FF1F00','#FF017B','#FF34BA','#EC10FF','#C852FF','#8863F1','#939DFF','#E993FF','#FC879C','#00CC14','#D4A500','#c0c0c0'];
+    const COLORS = ['#5ebaff','#00faf4','#ffffcc','#ffe775','#ffc140','#ff8f20','#ff6060','#8b0000','#cc0033','#cc0066','#9b30ff','#f9a7b0','#ff99ff','#ffcccc','#00cc33','#ffff00','#c0c0c0'];
 
     let loadedMapImg,
         mapImgs,
@@ -546,7 +546,16 @@ var HypoTrack = (function(){
             'Category 3': 4,
             'Category 4': 5,
             'Category 5': 6,
-            'Unknown': 7
+	        'Category 6': 7,
+	        'Category 7': 8,
+	        'Category 8': 9,
+	        'Category 9': 10,
+	        'Category 10': 11,
+	        'Hypercane': 12,
+	        'Megacane': 13,
+	        'Infinite Storm': 14,
+	        'Armageddon Storm': 15,
+            'Unknown': 16
         };
 
         let typeSelectData = {
@@ -698,8 +707,26 @@ var HypoTrack = (function(){
             categoryToPlace = 5;
         else if(key === '5')
             categoryToPlace = 6;
-        else if(key === 'u')
+	    else if(key === '6')
             categoryToPlace = 7;
+	    else if(key === '7')
+            categoryToPlace = 8;
+	    else if(key === '8')
+            categoryToPlace = 9;
+	    else if(key === '9')
+            categoryToPlace = 10;
+	    else if(key === '0')
+            categoryToPlace = 11;
+	    else if(key === 'y')
+            categoryToPlace = 12;
+	    else if(key === 'm')
+            categoryToPlace = 13;
+	    else if(key === 'i')
+            categoryToPlace = 14;
+	    else if(key === 'r')
+            categoryToPlace = 15;
+        else if(key === 'u')
+            categoryToPlace = 16;
         else if(key === 't')
             typeToPlace = 0;
         else if(key === 'b')
